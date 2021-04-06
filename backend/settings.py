@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '!uy(3)d_-01twl3e_=qt16y7f-1-r#&ei!%s6xici3a&^4o*a='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://backend-floxum.herokuapp.com/']
+ALLOWED_HOSTS = ['https://backend-floxum.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
@@ -27,10 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'auths',
-    'chats',
     'groups',
     'events',
-    'channels',
     'user_profile',
     'posts',
     'rest_framework',
@@ -70,7 +68,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
-ASGI_APPLICATION = "backend.asgi.application"
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',

@@ -9,7 +9,6 @@ urlpatterns = [
     path('auth/', include('auths.urls')),
     path('rest_auth_links/', obtain_auth_token),
     path('groups/', include('groups.urls')),
-    path('chats/', include('chats.urls')),
     path('events/', include('events.urls')),
     path('posts/', include('posts.urls')),
     path('user_profile/', include('user_profile.urls')),
