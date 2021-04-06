@@ -14,7 +14,7 @@ SECRET_KEY = '!uy(3)d_-01twl3e_=qt16y7f-1-r#&ei!%s6xici3a&^4o*a='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://backend-floxum.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['backend-floxum.herokuapp.com','127.0.0.1']
 
 
 # Application definition
